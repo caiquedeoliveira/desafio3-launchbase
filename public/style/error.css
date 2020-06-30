@@ -1,0 +1,89 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap";
+
+:root{
+    --color-rocket: #7159c1;
+    --color-interface: #262626;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: rgba(31, 30, 30, 0.822);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 69, 69, 0.562);
+}
+
+header div {
+    text-align: center;
+}
+
+header div.logo img {
+    width: 300px;
+    margin: 5px 16px;
+}
+
+header div .links{
+    margin: auto;
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+} 
+
+header div a.info {
+    border-bottom: 3px solid white;
+}
+
+
+header div a:hover {
+    color:#7159c1;
+    transition: 200ms;
+}
+
+
+.error{
+    background-color: #262626 ;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 30vw;
+    padding: 70px;
+    border-radius: 16px;
+}
+
+
+.error img {
+    width: 70px;
+    height: 70px;
+}
+
+.error h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+}
+
+.error h3 {
+    font-family: Roboto;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    font-weight: 400;
+}

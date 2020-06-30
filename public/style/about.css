@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap";
+
+:root{
+    --color-rocket: #7159c1;
+    --color-interface: #262626;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 10px;
+    background-color: rgba(31, 30, 30, 0.822);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 69, 69, 0.562);
+}
+
+header div {
+    text-align: center;
+}
+
+header div.logo img {
+    width: 300px;
+    margin: 5px 16px;
+}
+
+header div .links{
+    margin: auto;
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+} 
+
+header div a.info {
+    border-bottom: 3px solid white;
+}
+
+
+header div a:hover {
+    color:#7159c1;
+    transition: 200ms;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+ }
+
+ .card-info{
+    background-color: var(--color-interface);
+    border-radius: 16px;
+    text-align: center;
+ }
+
+ .card-info-image img{
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 16px ;
+ }
+
+ .card-info-title h1 {
+     margin-top: 20px;
+     color: white;
+     font-family: Roboto, sans-serif;
+ }
+
+ .card-info-title h1:hover {
+    color: var(--color-rocket);
+    transition: 400ms;
+    cursor: default;
+ }
+ 
+ .card-info-social a img {
+     height: 25px;
+     width: 25px;
+     margin: 20px 10px;
+ }
+ 
+ .card-content{
+    background-color: var(--color-interface);
+    border-radius: 16px ;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .card-content-title h1 {
+    margin: 30px 120px; 
+    color: white;
+    background-color: var(--color-rocket);
+    padding: 5px 0;
+    border-radius: 8px;
+ }
+
+ .card-content-subtitle h2 {
+     color: white;
+     margin: 10px 20px;
+ }
+
+ .card-content-p p{
+     color: var(--color-rocket);
+     margin: 10px 20px;
+     font-weight: bold;
+ }
+
+ .card-content-list {
+     margin: 30px;
+ }
+
+ .card-content-list ul {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+
+ .card-content ul li {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .card-content ul li img {
+     height: 80px;
+     width: 80px;
+     border-radius: 8px;
+ }
+
+ .card-content ul li label {
+     margin-top: 15px;
+     color: white;
+     font-weight: bold;
+ }
+
+

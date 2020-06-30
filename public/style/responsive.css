@@ -1,0 +1,56 @@
+@media (max-width: 820px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 20px
+    }
+
+    .course {
+        max-width: 600px;
+        margin: 20px;
+    }
+
+    .card-container{
+        margin: 20px 10px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .card-container .card-info{
+        margin-right: 80px;
+    }
+
+    .card-container .card-info p {
+        margin: 20px 60px;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card-info{
+        margin: 10px 20px;
+    }
+
+    .card-info-image img {
+        width: 65%;
+    }
+    
+    .card-content{
+        margin: 10px 20px
+    }
+
+    .card-content-title {
+        padding: 10px;
+    }
+
+    header div.logo img{
+        width: 200px;
+    }
+
+    header div a {
+        margin: 0 10px;
+    }
+ 
+}
+

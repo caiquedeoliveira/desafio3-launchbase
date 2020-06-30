@@ -1,0 +1,193 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap";
+
+:root  {
+    --color-rocket: #7159c1;
+    --color-launch: #fe951f;
+    --color-gs: #04d265;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    padding: 10px;
+    background-color: rgba(31, 30, 30, 0.822);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 69, 69, 0.562);
+}
+
+header div {
+    text-align: center;
+}
+
+header div.logo img {
+    width: 300px;
+    margin: 5px 16px;
+}
+
+header div .links{
+    margin: auto;
+
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+} 
+
+header div a.classes {
+    border-bottom: 3px solid white;
+}
+
+
+header div a:hover {
+    color: var(--color-rocket);
+    transition: 200ms;
+}
+
+/* === CARDS ===*/
+
+.cards {
+    max-width: 950px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(70, 69, 69, 0.562);
+    padding: 100px 30px 60px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-content,
+.card-info {
+    font-family: 'Roboto';
+    line-height: 20px;
+}
+
+.card-content p {
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-info{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 700;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* === STARTER CARD === */
+
+strong.str{
+    color: var(--color-rocket);
+}
+
+.card.str:hover{
+    border: 2px solid var(--color-rocket);
+    transition: 200ms;
+}
+
+.card-price.str{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* === LAUNCHBASE CARD === */
+
+strong.launch {
+    color: var(--color-launch);
+}
+
+.card.launch:hover{
+    border: 2px solid var(--color-launch);
+    transition: 200ms;
+}
+
+.card-price.launch{
+    background-color: var(--color-launch);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* === GOSTACK CARD === */
+
+strong.gs{
+    color: var(--color-gs);
+}
+
+.card.gs:hover{
+    border: 2px solid var(--color-gs);
+    transition: 200ms;
+}
+
+.card-price.gs {
+    background-color: var(--color-gs);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* === COURSE PAGE == */
+.course {
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 900px;
+    position: relative;
+}
+
+.card-container {
+    position: absolute;
+    width: 800px;
+    margin: 60px auto; 
+    text-align: center;  
+}
+
+.card-container .card {
+    height: 350px;
+}
+
+.card-container .card-content p {
+    font-size: 24px;
+    line-height: 34px;
+}
+.card-container .card-info p {
+    margin: 20px 80px;
+    font-size: 18px;
+}
+.card-container .card-price {
+    
+    padding: 8px 20px;
+}
