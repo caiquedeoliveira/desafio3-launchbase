@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/style/index.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Rocketseat</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="cards">
+        {% for item in items %}
+        
+        <div class="card" id="{{ item.id }}">
+            <div class="card-image">
+                <img src="https://img.youtube.com/vi/{{ item.id }}/maxresdefault.jpg" alt="Imagem de {{ item.title }}">
+            </div>
+            <div class="card-content">
+                <h1>{{ item.title }}</h1>
+            </div>
+            <div class="card-info">
+                <p>{{ item.duration }}</p>
+                <p class="card-price">{{ item.price }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
+
+
+
+{% block scripts %}
+    <script src="/script/index.js"></script>
+{% endblock scripts %}

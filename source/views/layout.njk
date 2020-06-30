@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/rckt.ico" type="image/x-icon"/>
+        {% block styles %}{% endblock styles %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/style/responsive.css">
+
+        {% block title %}
+            <title>Rocketseat</title>
+        {% endblock title %}
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <img src="https://www.reshape.com.br/assets/uploads/rocketseat.png" alt="Rocketseat">
+                </a>
+            </div>
+            <div class='links'>
+                <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">
+                    <span class="material-icons">group_add</span>
+                </a>
+                <a href="/about">
+                    <span class="material-icons">info</span>
+                </a>
+                <a href="/courses">
+                    <span class="material-icons">school</span>
+                </a>
+                <a href="mailto:oi@rocketseat.com.br">
+                    <span class="material-icons">mail_outline</span>
+                </a>
+                <a href="tel:+5547992078767">
+                    <span class="material-icons">phone</span>
+                </a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock content %}
+
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+
+    </body>
+
+</html>

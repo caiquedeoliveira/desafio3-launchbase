@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/style/courses.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>{{ item.title }}</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="course">
+            <div class="card-container">
+            <div class="card {{ item.class }}" id="{{ item.id }}">
+                <div class="card-image">
+                    <img src="/assets/{{ item.image }}.svg" alt="{{ item.id }}">
+                </div>
+                <div class="card-content">
+                    <p>
+                        <strong class="{{ item.class }}">{{ item.description_bold }}</strong>
+                        {{ item.description }}</p>
+                </div>
+                <div class="card-info">
+                    <p>{{ item.modules }}</p>
+                    <p class="card-price {{ item.class }}">{{ item.price}}</p>
+                </div>
+            </div>
+            </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/script/course.js"></script>
+{% endblock scripts %}

@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/style/about.css">
+{% endblock styles %}
+
+{% block title %}
+    <title>Sobre a Rocketseat</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="cards">
+        <div class="card-info">
+            <div class="card-info-image">
+                <img src="/assets/{{ about.image }}.jpg" alt="{{ about.title }}">
+            </div>
+            <div class="card-info-title">
+                <h1>{{ about.title }}</h1>
+            </div>
+            <div class="card-info-social">
+                {% for link in about.links %}
+                
+                <a href="{{ link.url }}" target="_blank">
+                    <img src="/assets/{{ link.image }}.png" alt="{{ link.name }}">
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="card-content-title">
+                <h1>{{ about.text_1 }}</h1>
+            </div>
+            <div class="card-content-subtitle">
+                <h2>{{ about.text_2 }}</h2>
+            </div>
+            <div class="card-content-p">
+                <p>{{ about.text_3 }}</p>
+            </div>
+
+            <div class="card-content-list">
+                <ul>
+                    {% for tech in about.techs %}
+                    <li>
+                        <img src="/assets/{{ tech.image }}.JPG" alt="{{ tech.name }}">
+                        <label for="{{ tech.name }}">{{ tech.name }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %} 
